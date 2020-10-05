@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "vscode_stm32_c_cpp_properties",
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "includePath": [
+                "${workspaceRoot}/Inc/",
+                "${workspaceRoot}/Drivers/STM32F4xx_HAL_Driver/Inc/",
+                "${workspaceRoot}/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/",
+                "${workspaceRoot}/Drivers/CMSIS/Device/ST/STM32F4xx/Include/",
+                "${workspaceRoot}/Drivers/CMSIS/Include/",
+                "${workspaceRoot}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/",
+                "${workspaceRoot}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/",
+                "${workspaceRoot}/Drivers/CMSIS/DSP/Include",
+                "${workspaceRoot}/commands"
+            ],
+            "defines": [
+                "STM32F407xx"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

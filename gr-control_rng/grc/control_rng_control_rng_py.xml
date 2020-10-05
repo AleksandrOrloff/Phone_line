@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<block>
+  <name>Control RNG</name>
+  <key>control_rng_control_rng_py</key>
+  <category>[Device control]</category>
+  <import>import control_rng</import>
+  <make>control_rng.control_rng_py($serialPort, $state, $attenuation, $band)</make>
+  <callback>set_state($state)</callback>
+  <callback>set_attenuation($attenuation)</callback>
+  <callback>set_band($band)</callback>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+   <param>
+    <name>Device name</name>
+    <key>serialPort</key>
+    <type>string</type>
+  </param>
+  <param>
+    <name>State</name>
+    <key>state</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Attenuation</name>
+    <key>attenuation</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Band</name>
+    <key>band</key>
+    <type>int</type>
+  </param>
+
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+</block>

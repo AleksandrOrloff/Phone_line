@@ -1,7 +1,0 @@
-/*!
- * \defgroup block GNU Radio CONTROL_RNG C++ Signal Processing Blocks
- * \brief All C++ blocks that can be used from the CONTROL_RNG GNU Radio
- *        module are listed here or in the subcategories below.
- *
- */
-

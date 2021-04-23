@@ -1,0 +1,82 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 1 1
+Title "Noise mixer"
+Date "2020-11-05"
+Rev "2.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5075 2400 2    97   Input ~ 0
+GND_OF_BOARD
+$Comp
+L Connector:RJ11 J?
+U 1 1 5FA3F8B9
+P 5450 3250
+F 0 "J?" H 5500 3850 50  0001 R CNN
+F 1 "RJ11" H 5550 3750 74  0000 R CNN
+F 2 "" V 5450 3275 50  0001 C CNN
+F 3 "~" V 5450 3275 50  0001 C CNN
+	1    5450 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5FA4012F
+P 4675 2200
+F 0 "T?" V 4721 1912 50  0001 R CNN
+F 1 "Transformer_1P_1S" H 4675 1912 74  0000 R CNN
+F 2 "" H 4675 2200 50  0001 C CNN
+F 3 "~" H 4675 2200 50  0001 C CNN
+	1    4675 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ11 J?
+U 1 1 5FA3AA60
+P 2550 3250
+F 0 "J?" H 2607 3817 50  0001 C CNN
+F 1 "RJ11" H 2607 3725 74  0000 C CNN
+F 2 "" V 2550 3275 50  0001 C CNN
+F 3 "~" V 2550 3275 50  0001 C CNN
+	1    2550 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5275 2000 2    97   Input ~ 0
+DAC_OUT_OF_BOARD
+Wire Wire Line
+	2950 3150 3450 3150
+Wire Wire Line
+	4275 2000 3450 2000
+Wire Wire Line
+	3450 2000 3450 3150
+Connection ~ 3450 3150
+Wire Wire Line
+	3450 3150 5050 3150
+Wire Wire Line
+	2950 3250 3750 3250
+Wire Wire Line
+	4275 2400 3750 2400
+Wire Wire Line
+	3750 2400 3750 3250
+Connection ~ 3750 3250
+Wire Wire Line
+	3750 3250 5050 3250
+$Comp
+L Device:C_Small C1
+U 1 1 5FA6D1E9
+P 5175 2000
+F 0 "C1" V 4925 2000 74  0000 C CNN
+F 1 "48nF" V 5050 2000 74  0000 C CNN
+F 2 "" H 5175 2000 50  0001 C CNN
+F 3 "~" H 5175 2000 50  0001 C CNN
+	1    5175 2000
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

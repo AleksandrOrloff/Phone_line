@@ -1,0 +1,95 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 1 1
+Title "Noise mixer"
+Date "2020-11-05"
+Rev "2.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:RJ11 J?
+U 1 1 5FA3F8B9
+P 5250 3050
+F 0 "J?" H 5300 3650 50  0001 R CNN
+F 1 "RJ11" H 5350 3550 74  0000 R CNN
+F 2 "" V 5250 3075 50  0001 C CNN
+F 3 "~" V 5250 3075 50  0001 C CNN
+	1    5250 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ11 J?
+U 1 1 5FA3AA60
+P 2350 3050
+F 0 "J?" H 2407 3617 50  0001 C CNN
+F 1 "RJ11" H 2407 3525 74  0000 C CNN
+F 2 "" V 2350 3075 50  0001 C CNN
+F 3 "~" V 2350 3075 50  0001 C CNN
+	1    2350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2950 3250 2950
+Wire Wire Line
+	3250 1800 3250 2950
+Connection ~ 3250 2950
+Wire Wire Line
+	3250 2950 4850 2950
+Wire Wire Line
+	2750 3050 3550 3050
+Wire Wire Line
+	3550 2200 3550 3050
+Connection ~ 3550 3050
+Wire Wire Line
+	3550 3050 4850 3050
+$Comp
+L DIF:trans T?
+U 1 1 5FAE29B9
+P 4600 2000
+F 0 "T?" H 4600 2625 50  0001 C CNN
+F 1 "trans" H 4600 2534 50  0001 C CNN
+F 2 "" H 4600 1750 50  0001 C CNN
+F 3 "" H 4600 1750 50  0001 C CNN
+	1    4600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1800 4100 1800
+Wire Wire Line
+	3550 2200 4100 2200
+$Comp
+L Device:C_Small C1
+U 1 1 5FB0AEF7
+P 5200 1600
+F 0 "C1" V 4971 1600 50  0000 C CNN
+F 1 "48nF" V 5050 1600 50  0000 C CNN
+F 2 "" H 5200 1600 50  0001 C CNN
+F 3 "~" H 5200 1600 50  0001 C CNN
+	1    5200 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L dif:STM32L467_Discovery U?
+U 1 1 5FB0FA90
+P 6000 1900
+F 0 "U?" H 6428 1946 50  0001 L CNN
+F 1 "STM32L467_Discovery" H 5600 1300 50  0000 L CNN
+F 2 "" H 6000 1900 50  0001 C CNN
+F 3 "" H 6000 1900 50  0001 C CNN
+	1    6000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1600 5500 1600
+Wire Wire Line
+	5500 2200 5100 2200
+Wire Wire Line
+	5100 2200 5100 2400
+$EndSCHEMATC

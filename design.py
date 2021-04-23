@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'design.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(600, 200)
+        MainWindow.setAnimated(False)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.formLayout = QtWidgets.QFormLayout(self.centralwidget)
+        self.formLayout.setObjectName("formLayout")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setObjectName("label_2")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_2)
+        self.comboBox = QtWidgets.QComboBox(self.centralwidget)
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.comboBox)
+        self.splitter = QtWidgets.QSplitter(self.centralwidget)
+        self.splitter.setOrientation(QtCore.Qt.Horizontal)
+        self.splitter.setObjectName("splitter")
+        self.label = QtWidgets.QLabel(self.splitter)
+        self.label.setMaximumSize(QtCore.QSize(16777215, 1677721))
+        self.label.setObjectName("label")
+        self.comboBox_2 = QtWidgets.QComboBox(self.splitter)
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.SpanningRole, self.splitter)
+        self.splitter_4 = QtWidgets.QSplitter(self.centralwidget)
+        self.splitter_4.setOrientation(QtCore.Qt.Horizontal)
+        self.splitter_4.setObjectName("splitter_4")
+        self.label_3 = QtWidgets.QLabel(self.splitter_4)
+        self.label_3.setObjectName("label_3")
+        self.splitter_3 = QtWidgets.QSplitter(self.splitter_4)
+        self.splitter_3.setOrientation(QtCore.Qt.Vertical)
+        self.splitter_3.setObjectName("splitter_3")
+        self.radioButton = QtWidgets.QRadioButton(self.splitter_3)
+        self.radioButton.setEnabled(True)
+        self.radioButton.setChecked(False)
+        self.radioButton.setObjectName("radioButton")
+        self.buttonGroup = QtWidgets.QButtonGroup(MainWindow)
+        self.buttonGroup.setObjectName("buttonGroup")
+        self.buttonGroup.addButton(self.radioButton)
+        self.radioButton_2 = QtWidgets.QRadioButton(self.splitter_3)
+        self.radioButton_2.setChecked(True)
+        self.radioButton_2.setObjectName("radioButton_2")
+        self.buttonGroup.addButton(self.radioButton_2)
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.SpanningRole, self.splitter_4)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "RNG"))
+        self.label_2.setText(_translate("MainWindow", "Диапазон"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "300-3400 Гц"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "300-1850 Гц"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "3500-5000 Гц"))
+        self.label.setText(_translate("MainWindow", "Ослабление (dB)"))
+        self.comboBox_2.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_2.setItemText(1, _translate("MainWindow", "3"))
+        self.comboBox_2.setItemText(2, _translate("MainWindow", "6"))
+        self.comboBox_2.setItemText(3, _translate("MainWindow", "9"))
+        self.comboBox_2.setItemText(4, _translate("MainWindow", "12"))
+        self.comboBox_2.setItemText(5, _translate("MainWindow", "15"))
+        self.comboBox_2.setItemText(6, _translate("MainWindow", "18"))
+        self.comboBox_2.setItemText(7, _translate("MainWindow", "21"))
+        self.comboBox_2.setItemText(8, _translate("MainWindow", "24"))
+        self.label_3.setText(_translate("MainWindow", "Состояние"))
+        self.radioButton.setText(_translate("MainWindow", "ON"))
+        self.radioButton_2.setText(_translate("MainWindow", "OFF"))
+

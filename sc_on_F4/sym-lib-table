@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name dif)(type Legacy)(uri ${KIPRJMOD}/dif.lib)(options "")(descr ""))
+  (lib (name DIF)(type Legacy)(uri ${KIPRJMOD}/DIF.lib)(options "")(descr ""))
+)
